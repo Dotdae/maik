@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><% title %> </title>
+    <link rel="stylesheet" href="/css/cursos.css">
+    <%- include ('partials/head.ejs') %>
+</head>
+<body>
+    <%- include ('partials/nav.ejs') %>
+    <div class="cards">
+        <% cursos.forEach((curso)=> { %>
+            <div class="form-container">
+                <% if(user.name == 'Administrador'){ %>
+                    <div class="admin-detail">
+                        <a href="/courses/edit/<%= curso._id %>">
+                            <i class="edit fa-solid fa-pen-to-square fa-2xl"></i>
+                        </a>
+                        <form action="/courses/delete/<%= curso._id %>?_method=DELETE" method="POST">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button type="submit">
+                                <i class="delete fa-sharp fa-solid fa-trash fa-2xl"></i>
+                            </button>
+                        </form>
+                    </div>
+                <% } %> 
+                <form action="/courses/add" method="post" class="card">
+                    <div class="contenido">
+                        <input type="hidden" value="<%= curso.name %>" name="curso_name">
+                        <h3><%= curso.name %></h3>
+                        <p><strong>Horario:</strong><br><%= curso.horario %></p>
+                        <input type="hidden" value="<%= curso.horario %>" name="curso_horario">
+                        <p>Aula: <%= curso.aula %></p>
+                        <input type="hidden" value="<%= curso.aula %>" name="curso_aula">
+                        <p>Profesor: <%= curso.profesor %></p>
+                        <input type="hidden" value="<%= curso.profesor %>" name="curso_profesor">
+                        <button class="btn-submit" type="submit">Inscribirse</button>
+                    </div>
+                </form>
+                
+            </div>
+        <%})%>  
+    </div>
+    <%- include ('partials/footer.ejs') %>
+</body>
+</html>

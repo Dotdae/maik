@@ -1,0 +1,196 @@
+.container-banner{
+
+    height: 700px;
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner-img{
+
+    height: 88%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+
+}
+
+.banner-info{
+
+    padding:0 3em;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+
+}
+
+.banner-title{
+
+    line-height: 1.5;
+    font-size: 2.5em;
+
+}
+
+.btn{
+
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.btn:hover{
+
+    background: #FFFFFF;
+    color: #000000;
+
+}
+
+.course{
+
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+
+}
+
+.course h1{
+
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+.course p{
+
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+
+.row{
+
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.course-col{
+
+    flex-basis: 31%;
+    background: #b7d5ff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-right: 10px;
+    padding: 20px 20p;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: pointer;
+    height: 250px;
+
+}
+
+.course-col h3{
+
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+
+.course-col:hover{
+
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.campus{
+
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.campus p{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.campus-col{
+
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.campus-col img{
+
+    width: 100%;
+    display: block;
+    height: 180px;
+}
+
+.layer{
+
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    color: #FFFFFF;
+
+}
+
+.layer h3{
+
+    width: 100%;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.layer:hover h3{
+
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+.layer:hover{
+
+    background: rgba(44, 145, 240, 0.7);
+
+}

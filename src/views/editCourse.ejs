@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> </title>
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="./css/course.css">
+    <%- include ('partials/head.ejs') %>
+</head>
+<body>
+    <%- include ('partials/nav.ejs') %>
+    <form class="form" action="/courses/update/<%= course.id  %>?_method=PUT" method="post">
+        <input type="hidden" name="_method" value="PUT">
+        <div class="title">Ingresa los datos del curso</div>
+        <div class="input-container ic1">
+            <input name="name" class="input" type="text" placeholder=" " value="<%= course.name  %>" />
+            <div class="cut"></div>
+            <label for="name" class="placeholder">Nombre</label>
+        </div>
+        <div class="input-container ic2">
+            <input name="horario" class="input" type="text" placeholder=" " value="<%= course.horario %>"/>
+            <div class="cut"></div>
+            <label for="horario" class="placeholder">Horario</label>
+        </div>
+        <div class="input-container ic2">
+            <input name="aula" class="input" type="text" placeholder=" " value="<%= course.aula  %>"/>
+            <div class="cut cut-short"></div>
+            <label for="aula" class="placeholder">Aula</>
+        </div>
+        <div class="input-container ic2">
+            <input name="profesor" class="input" type="text" placeholder=" " value="<%= course.profesor  %>"/>
+            <div class="cut cut-short"></div>
+            <label for="profesor" class="placeholder">Profesor</>
+        </div>
+        <button type="text" class="submit">Guardar</button>
+    </form>
+    <%- include ('partials/footer.ejs') %>
+</body>
+</html>

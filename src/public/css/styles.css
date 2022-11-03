@@ -1,0 +1,134 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    background: #7F7FD5;
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
+    font-family: 'Lato', sans-serif;
+
+}
+
+/* Header */
+
+.header{
+
+    height: 50px;
+    width: 100%;
+    position: relative;
+
+}
+
+nav{
+
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+    background: #7F7FD5;
+
+}
+
+nav img{
+
+    width: 75px;
+
+}
+
+.nav-links{
+
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav-links li{
+
+    list-style: none;
+    display: inline-block;
+    padding: 5px 12px;
+    position: relative;
+
+}
+
+.nav-links a{
+
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.nav-links li::after{
+    
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #B2DAFA;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    transition: 0.5s;
+
+}
+
+.nav-links li:hover::after{
+
+    width: 100%;
+
+}
+
+/* Footer */
+
+.footer{
+
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background: #86A8E7;
+    height: 55px;
+
+}
+
+.footer h2{
+
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #FFF;
+
+}
+
+.icons .fa-brands{
+
+    color: #3E31F5;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    transition: 0.5s;
+
+}
+
+.icons .fa-brands:hover{
+
+    color: #FFF;
+
+}
+
+.fa-heart{
+
+    color: #F44336;
+
+}
+
+.footer p{
+
+    margin-top: 10px;
+    color: #FFF;
+
+}

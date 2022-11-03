@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include ('partials/head.ejs') %>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <%- include ('partials/nav.ejs') %>
+    <div class="container-banner">
+        <img src="https://scontent.fcen2-1.fna.fbcdn.net/v/t39.30808-6/278450461_950539068996445_3457334151591777282_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFN74RyorAAqAWD95e5UD9KQK8lrUz8PHFAryWtTPw8cWyZcyNQ3lGDMGJPb9tMXmC-qzqdeppV9-2XeR3yuyxG&_nc_ohc=tSoP-iTB3twAX-v_N3C&_nc_ht=scontent.fcen2-1.fna&oh=00_AfDLGV83bLqoZg6k2PBXh3b5Ck-_R_P906BlgiFxjCssqg&oe=635FDCE2" class="banner-img">
+        <div class="banner-info">
+            <h1 class="banner-title">La Casa Azul Villa de Ahome</h1>
+            <a href="https://goo.gl/maps/Spk6RcaJPCgK53NS7" class="btn">Visitanos!</a>
+        </div>
+    </div>
+    <div class="course">
+        <h1>Eventos</h1>
+        <p>¡Préparate para nuestros próximos eventos!</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Noche Bohemia</h3>
+                <b>Fecha:</b>
+                <p>Sábado 18 de junio</p>
+                <b>Hora:</b>
+                <p>08:00 PM</p>
+            </div>
+            <div class="course-col">
+                <h3>Mural "Plasma La Cultura de Nuestro Pueblo"</h3>
+                <b>Fecha:</b>
+                <p>Viernes 19 de Agosto</p>
+                <b>Hora:</b>
+                <p>10:30 AM</p>
+            </div>
+            <div class="course-col">
+                <h3>Grito de Independecia</h3>
+                <b>Fecha:</b>
+                <p>Viernes 16 de Septiembre</p>
+                <b>Hora:</b>
+                <p>11:00 PM</p>
+            </div>
+            <div class="course-col">
+                <h3>Concurso de Altares</h3>
+                <b>Fecha:</b>
+                <p>Jueves 27 de Octubre</p>
+                <b>Hora:</b>
+                <p>6:00 PM</p>
+            </div>
+        </div>
+    </div>
+    <div class="campus">
+        <h1>Algunos de nuestros cursos disponibles</h1>
+        <p>¡Ven y explota tus talentos con nosotros!</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/00f5608e-2743-488c-8b1a-df8f711bc72d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221028T052414Z&X-Amz-Expires=86400&X-Amz-Signature=2acf30b2360a1a4e3cffd76b2c91f3bba70d31f9f9a995b7f3bb9abf5313bbe1&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject" alt="">
+                <div class="layer">
+                    <h3>Curso de Guitarra</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="https://corbuse.edu.mx/blog/wp-content/uploads/2016/09/CORBUSE-Cursos-de-cocina-basica-en-mexico.jpg" alt="">
+                <div class="layer">
+                    <h3>Curso de Cocina</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/620968e5-02a5-40d3-9050-a141761179d8/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221028T052636Z&X-Amz-Expires=86400&X-Amz-Signature=701b7c12a66fa5f9b90c84abe3391aba193254ec5eb062360b9b142147c2e159&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject" alt="">
+                <div class="layer">
+                    <h3>Curso de Pintura</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include ('partials/footer.ejs') %>
+</body>
+</html>

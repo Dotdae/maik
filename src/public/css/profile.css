@@ -1,0 +1,168 @@
+.container{
+
+    width: 100%;
+    height: 86.1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profile-box{
+
+    background: rgba(89, 162, 245, 0.467);
+    margin-top: 65px;
+    width: 750px;
+    height: 600px;
+    text-align: center;
+    padding: 40px 90px;
+    color: #FFFFFF;
+    position: relative;
+    border-radius: 20px;
+
+}
+
+.profile-pic{
+    width: 120px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    padding: 6px;
+
+}
+
+h2{
+
+    margin-top: 20px;
+    margin-bottom: -40px;
+
+}
+
+.not{
+
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 250px;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: pink;
+
+}
+
+.not h5{
+
+    margin-top: 70px;
+    font-size: 32px;
+
+}
+
+.not a{
+
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #fff;
+    border: 0 solid #e2e8f0;
+    border-radius: 1.5rem;
+    color: #0d172a;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+
+}
+
+.not a:hover{
+
+    background-color: #1e293b;
+    color: #fff;
+
+}
+
+.curso-info{
+
+    margin-top: 30px;
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+
+}
+
+.curso-card{
+
+    position: relative;
+    scroll-snap-align: center; /* Centra la tarjeta si scrolleas */
+    width: 70%;
+    min-width: 330px;
+    max-width: 400px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: pink;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.curso-card h3{
+
+    margin-top: 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.curso-card p{
+
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.curso-card button{
+
+    margin-top: 30px;
+    align-items: center;
+    background-color: #FFE7E7;
+    border: 1px solid #FEE0E0;
+    border-radius: 11px;
+    color: #D33A2C;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 33.4929px;
+    padding: 2px 12px;
+    transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+
+}
+
+.curso-card button:active,
+.curso-card button:hover,
+.curso-card button:focus{
+
+    outline: 0;
+
+}
+
+.curso-card button:active{
+
+    box-shadow: rgba(0, 0, 0, .012) 0 1px 3px 0 inset;
+
+}
+
+.curso-card button:hover{
+
+    background-color: #D33A2C;
+    color: #FFE7E7;
+    border-color: #FAA4A4;
+
+}

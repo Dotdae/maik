@@ -1,0 +1,127 @@
+.cards{
+
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    
+
+}
+
+.card{
+    
+    width: 100%;
+    margin: 5px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+
+}
+.card:hover{
+
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+
+}
+
+.card img{
+
+    width: 100%;
+
+}
+
+.contenido{
+
+    padding: 15px;
+    text-align: center;
+
+}
+
+.admin-detail{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.admin-detail button{
+
+    background: none;
+    border: none;
+
+}
+
+.admin-detail .edit{
+
+    color: #2FB4CC;
+    padding: 15px;
+
+}
+
+.admin-detail .edit:hover{
+
+    color: #48d1e9;
+
+}
+
+.admin-detail .delete{
+
+    color: #db1e05;
+    padding: 15px;
+
+}
+
+.admin-detail .delete:hover{
+
+    color: #f8452d;
+
+}
+
+.contenido p{
+
+    line-height: 1.5;
+    color: #6A6A6A;
+
+
+}
+
+.contenido h3{
+
+    font-weight: 400;
+    margin-bottom: 15px;
+
+}
+
+.contenido .btn-submit{
+
+    background: transparent;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2FB4CC;
+    border: 1px solid #2FB4CC;
+    border-radius: 4px;
+
+}
+
+.contenido .btn-submit{
+
+    background-color: #2FB4CC;
+    color: #FFFFFF;
+}

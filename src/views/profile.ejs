@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/profile.css">
+    <%- include ('partials/head.ejs') %>
+</head>
+<body>
+    <%- include ('partials/nav.ejs') %>
+    <div class="container" id="container">
+        <div class="profile-box">
+            <img src="/img/usuario.png" alt="" class="profile-pic">
+            <h3><%= user.name %></h3>
+            <% if(user.name == "Administrador"){ %>
+                <p>Administrador</p>
+            <% } else{%>
+                <p>Estudiante</p>
+            <% } %>   
+            <div class="profile-bottom">
+                <h2>MIS CURSOS</h2>
+                <% if (cursos != '') {%>
+                    <div class="curso-info">
+                        <% cursos.forEach((curso)=> { %> 
+                            <div class="curso-card">
+                                <h3>Información del curso</h3>
+                                <p><strong>Nombre del curso: </strong><%= curso.curso_name %></p>
+                                <p><strong>Horario: </strong> <%= curso.curso_horario %></p>
+                                <p><strong>Aula: </strong> <%= curso.curso_aula %></p>
+                                <p><strong>Profesor: </strong> <%= curso.curso_profesor %></p>
+                                <form action="/profile/delete/<%= curso._id %>?_method=DELETE" method="POST">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <button type="submit">Eliminar curso</button>
+                                </form>
+                            </div>
+                        <% }) %> 
+                    </div>
+                <% } else { %>
+                    <div class="not">
+                        <h5>No hay cursos agregados.</h5>
+                        <a href="/courses">¡Únete a uno!</a>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    <%- include ('partials/footer.ejs') %>
+    <script>
+        (function(){ 
+            var dialog = document.getElementById('popup'); 
+            document.getElementById('show').onclick = function(){ 
+                dialog.show(); 
+            }; 
+            document.getElementById('hide').onclick = function(){
+                dialog.close(); 
+            }; 
+        })();
+    </script>
+</body>
+</html>
